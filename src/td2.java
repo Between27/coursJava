@@ -10,15 +10,18 @@ public class td2 {
 
     public static void exo1 (int[] tab) {
         ArrayList<String> liste = new ArrayList<String>();
-        int p = 0;
         for (int i =0; i<tab.length;i++){
-            for (int j =0;j < tab.length;j++) {
-                if (tab[j] <tab[i]) {p = tab[j];}
+            int min = tab[0];
+            int minIndex = 0;
+            for (int j =1;j < tab.length;j++) {
+                if (tab[j] <min) {min = tab[j];
+                    minIndex = j;
+
+                }
             }
-            String n = String.valueOf(p);
 
         }
-System.out.println(p);
+        System.out.println(liste);
     }
 
 
